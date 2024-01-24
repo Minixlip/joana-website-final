@@ -1,13 +1,47 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bcBlack: #1b1a17;
+  --bcLightBlack: #1f1e1b;
+  --bcDarkGold: #a35709;
+  --bcGold: #ff8303;
+  --bcWhite: #f0e3ca;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  background-image: linear-gradient(
+    43deg,
+    #000000 0%,
+    #751013 46%,
+    #ffcc70 100%
+  );
+  background-repeat: no-repeat;
+  color: #fff;
+  overflow-x: hidden;
+  background-size: cover;
+  font-family: 'PT Serif', serif;
+}
+
+.btn {
+  background: linear-gradient(
+    92.23deg,
+    #e5e5e5 21.43%,
+    #8f8f8f 50.63%,
+    #8f8f8f 100%,
+    #ffcc70 117.04%
+  );
+  box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+}
+
+.section {
+  @apply py-8 lg:py-24 lg:h-screen flex items-start;
 }
